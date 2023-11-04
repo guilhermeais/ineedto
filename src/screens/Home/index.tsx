@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import {
   Alert,
   FlatList,
@@ -5,12 +6,10 @@ import {
   TextInput,
   TouchableOpacity,
   View,
-  findNodeHandle,
 } from 'react-native'
-import { styles } from './styles'
-import { Task } from '../../components/Task'
-import { useEffect, useState } from 'react'
 import { ProgressBar } from '../../components/ProgressBar'
+import { Task } from '../../components/Task'
+import { styles } from './styles'
 
 type TaskData = {
   task: string
@@ -99,7 +98,7 @@ export function Home() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.pageTitle}>I've To App</Text>
+      <Text style={styles.pageTitle}>I Need To App</Text>
       <Text style={styles.subTitle}>
         App simples para suas tarefas diárias.
       </Text>
